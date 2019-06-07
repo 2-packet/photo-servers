@@ -49,7 +49,6 @@ npm run react-dev
 npm start
 ```
 
-<<<<<<< HEAD
 
 ### API  
  ##### GET 
@@ -59,11 +58,11 @@ npm start
 -  This request will get all the photos for a specific restaurant
 ```
  {
- id: 1, 
- restaurant 'Rempel Group', 
- url: 'https://resizer.otstatic.com/v2/photos/large/24947294.jpg', 
- timestamp: '1977-02-12',
- dislike: 0
+    id: 1, 
+    restaurant 'Rempel Group', 
+    url: 'https://resizer.otstatic.com/v2/photos/large/24947294.jpg', 
+    timestamp: '1977-02-12',
+    dislike: 0
  }
 ```
 
@@ -105,15 +104,4 @@ npm start
  Endpoint: ```/api/restaurant/:id/photos```
 - is to used to delete a specific item in the database.
 - The respond code is with a response http code of 404(not found)
-=======
-CRUD 
-GET - is a http method that is being used to read/retrieve a representation of a resource. Once the http request has been successful, it will receive a response code of 200. If an error occurs, it will respond with a 404(not found) or 400(bad request). The GET request is listening to for a GET request with the API (/:id/photos). This request will get all the photos for a specific restaurant. 
-
-POST - is to create a new source which updates the database and save the new data into the database. If a POST request is successful, it will return a http request code of 201. The POST request with an API of (/:id/photos). This request will store the updated picture that the user have put into the database. 
-
-PUT - is updating a known source in the database. On a successful updating, a http response code of 200. With the API of (/:id/photos), we are updating an existing photo to a specific restaurant photo.
-
-DELETE - is to used to delete a specific item in the database. Once a part of data is deleted, it will respond with a response http code of 404(not found), this will ensure to let the user know that part of the data is gone. With an API of (/:id/photos), it will identify that specific restaurant id and delete that photo. 
-
->>>>>>> a883d23d7ab100bbd052f7686cb3b6686ae1bb19
 

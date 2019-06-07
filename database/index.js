@@ -12,17 +12,20 @@ connection.connect(err => {
 
 var getAllPhotos = function (callback) {
   connection.query(`SELECT * FROM photos where id < 13`, (error, results, fields) => {
-    if (error) throw error;
+    if (error) { throw error; }
     callback(results);
   });
 };
 
 var getAllInfo = function (callback) {
   connection.query(`SELECT * FROM info where id < 2`, (error, results, fields) => {
-    if (error) throw error;
+    if (error) { throw error; }
     callback(results);
   });
 };
 
 module.exports.getAllPhotos = getAllPhotos;
 module.exports.getAllInfo = getAllInfo;
+
+
+axios.get('api/resturant/id/photos')

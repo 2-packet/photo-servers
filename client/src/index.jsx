@@ -14,7 +14,7 @@ class App extends React.Component {
       photos: [],
       info: [],
       isLoading: true,
-    }
+    };
   }
   componentDidMount() {
     $.get({
@@ -36,7 +36,7 @@ class App extends React.Component {
     } else {
       return (
         <div>Loading...</div>
-      )
+      );
     }
   }
 }
