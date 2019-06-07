@@ -104,4 +104,8 @@ npm start
  Endpoint: ```/api/restaurant/:id/photos```
 - is to used to delete a specific item in the database.
 - The respond code is with a response http code of 404(not found)
+<<<<<<< HEAD
+=======
+
+>>>>>>> f164baa2bf90acd6d7d6e5212dfe486cebe6a111
 
