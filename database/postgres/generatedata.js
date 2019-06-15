@@ -5,8 +5,8 @@ let faker = require('faker');
 let casual = require('casual');
 let counter = 0;
 //open path to write it 
-const writer = fs.createWriteStream('generateData.csv', { flags: 'a' });
-
+const writer = fs.createWriteStream('hammer.csv', { flags: 'a' });
+writer.write('rest_id,rest_name,photo_id,image,timestamp\n');
 // const dataGen = () => {
 //     for (let i = 0; i < 10000000; i++) {
 //         for (let j = 0; j < 10; j++) {
@@ -21,18 +21,22 @@ const writer = fs.createWriteStream('generateData.csv', { flags: 'a' });
 // };
 
 // dataGen();
+const pic_url = ['https://rest-photos.s3-us-west-1.amazonaws.com/pic1.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic10.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic2.jpg',
+    'https://rest-photos.s3-us-west-1.amazonaws.com/pic4.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic5.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic6.jpg',
+    'https://rest-photos.s3-us-west-1.amazonaws.com/pic7.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic8.jpeg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic9.jpg']
 
 
 function seed10Mil(writer) {
-    let i = 10000000;
+    let i = 100;
 
     function write() {
         let ok = true;
 
         do {
             let seeded = '';
+            let rest_name = faker.lorem.words(3);
             for (let j = 0; j < 10; j++) {
-                let seed = [i, counter++, faker.image.imageUrl(), casual.date(format = 'YYYY-MM-DD')];
+                let seed = [i, rest_name, counter++, pic_url[Math.floor(Math.random() * pic_url.length)], casual.date(format = 'YYYY-MM-DD')];
                 seeded += seed.join(',') + '\n';
             }
             i--;

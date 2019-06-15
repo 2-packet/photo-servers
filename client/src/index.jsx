@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-
+import axios from 'axios';
 import PhotoHeader from './components/PhotoHeader.jsx';
 import PhotoGrid from './components/PhotoGrid.jsx';
 import PhotoCarousel from './components/PhotoCarousel.jsx';
 import SidebarInfo from './components/SidebarInfo.jsx';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -17,12 +18,22 @@ class App extends React.Component {
     };
   }
   componentDidMount() {
-    $.get({
-      url: 'http://localhost:3050/photos/',
-      dataType: 'json',
-      success: allPhotos => { this.setState({ photos: allPhotos, isLoading: false }) },
-      error: err => { console.log('Failed..', err) },
-    });
+    let parseid = window.location.href.split('/');
+    const id = parseid[parseid.length - 2];
+    axios.get(`http://localhost:3060/api/restaurants/${id}/photos`)
+      .then((res) => {
+        console.log(res);
+        this.setState({ photos: res.data, isLoading: false })
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+    // $.get({
+    //   url: 'http://localhost:3060/api/restaurants/:id/photos',
+    //   dataType: 'json',
+    //   success: allPhotos => { this.setState({ photos: allPhotos, isLoading: false }) },
+    //   error: err => { console.log('Failed..', err) },
+    // });
   }
   render() {
     if (!this.state.isLoading) {
