@@ -24,3 +24,7 @@ coverage
 build/
 client/public/bundle.js
 
+generateData.csv
+package-lock.json
+package.json
+

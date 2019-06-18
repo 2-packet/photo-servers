@@ -22,12 +22,11 @@ writer.write('rest_id,rest_name,photo_id,image,timestamp\n');
 
 // dataGen();
 const pic_url = ['https://rest-photos.s3-us-west-1.amazonaws.com/pic1.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic10.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic2.jpg',
-    'https://rest-photos.s3-us-west-1.amazonaws.com/pic4.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic5.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic6.jpg',
-    'https://rest-photos.s3-us-west-1.amazonaws.com/pic7.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic8.jpeg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic9.jpg']
+    'https://rest-photos.s3-us-west-1.amazonaws.com/pic4.jpg']
 
 
 function seed10Mil(writer) {
-    let i = 100;
+    let i = 10000001;
 
     function write() {
         let ok = true;

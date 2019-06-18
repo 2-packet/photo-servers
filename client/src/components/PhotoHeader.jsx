@@ -60,8 +60,6 @@ class PhotoHeader extends React.Component {
             <img className="photo photoH" key={this.props.photos[7].id} src={this.props.photos[7].url} style={{ width: 142, height: 142 }} onClick={() => this.clickPhoto(this.props.photos[7].id)} />
             <img className="photo photoI" key={this.props.photos[8].id} src={this.props.photos[8].url} style={{ width: 288, height: 288 }} onClick={() => this.clickPhoto(this.props.photos[8].id)} />
             <img className="photo photoJ" key={this.props.photos[9].id} src={this.props.photos[9].url} style={{ width: 142, height: 142 }} onClick={() => this.clickPhoto(this.props.photos[9].id)} />
-            <img className="photo photoK" key={this.props.photos[10].id} src={this.props.photos[10].url} style={{ width: 142, height: 142 }} onClick={() => this.clickPhoto(this.props.photos[10].id)} />
-            {/* <img className="photo photoL" key={this.props.photos[11].id} src={this.props.photos[11].url} style={{ width: 288, height: 142 }} onClick={() => this.this.clickPhoto(this.props.photos[11].id)} /> */}
           </div>
         </div>
       )
@@ -80,8 +78,6 @@ class PhotoHeader extends React.Component {
             <img className="photo photoH" key={this.props.photos[7].id} src={this.props.photos[7].url} style={{ width: 142, height: 142 }} onClick={() => this.clickPhoto(this.props.photos[7].id)} />
             <img className="photo photoI" key={this.props.photos[8].id} src={this.props.photos[8].url} style={{ width: 288, height: 288 }} onClick={() => this.clickPhoto(this.props.photos[8].id)} />
             <img className="photo photoJ" key={this.props.photos[9].id} src={this.props.photos[9].url} style={{ width: 142, height: 142 }} onClick={() => this.clickPhoto(this.props.photos[9].id)} />
-            <img className="photo photoK" key={this.props.photos[10].id} src={this.props.photos[10].url} style={{ width: 142, height: 142 }} onClick={() => this.clickPhoto(this.props.photos[10].id)} />
-            {/* <img className="photo photoL" key={this.props.photos[11].id} src={this.props.photos[11].url} style={{ width: 288, height: 142 }} onClick={() => this.this.clickPhoto(this.props.photos[11].id)} /> */}
           </div>
           <div>
             <PhotoDimmer photos={this.props.photos} id={this.state.carouselId} clickX={this.clickX} />
