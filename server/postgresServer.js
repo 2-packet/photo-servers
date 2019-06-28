@@ -24,7 +24,6 @@ app.get('/api/restaurants/:id/photos', (req, res) => {
       console.log('fail');
       res.status(404).send(err);
     } else {
-      // console.log('result is:', result.rows);
       res.status(200).send(result.rows);
     }
   });
