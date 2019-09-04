@@ -28,12 +28,6 @@ class App extends React.Component {
       .catch((err) => {
         console.log(err);
       })
-    // $.get({
-    //   url: 'http://localhost:3060/api/restaurants/:id/photos',
-    //   dataType: 'json',
-    //   success: allPhotos => { this.setState({ photos: allPhotos, isLoading: false }) },
-    //   error: err => { console.log('Failed..', err) },
-    // });
   }
   render() {
     if (!this.state.isLoading) {
