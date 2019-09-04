@@ -28,6 +28,7 @@ body {
   grid-template-rows: repeat(2, 142px);
   background-color: #2d333f;
 }
+
 .save-restaurant-container {
   position: absolute;
   display: block;
@@ -36,6 +37,7 @@ body {
   top: 2rem;
   right: 2rem;
 }
+
 .save-restaurant-btn {
   width: 15rem;
   border: 1px solid #d8d9db;
@@ -52,14 +54,17 @@ body {
   cursor: pointer;
   outline: none;
 }
+
 .save-restaurant-btn:hover {
   border-color: #DA3743;
   cursor: pointer;
   outline: none;
 }
+
 .save-restaurant-btn:focus {
   border-color: #DA3743;
 }
+
 .save-restaurant-text-container {
   font-size: 13px;
   font-weight: 425;
@@ -68,6 +73,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .save-restaurant-text {
   display: flex;
   margin: 0 0 0 .25rem;
@@ -75,10 +81,6 @@ body {
   align-items: center;
 }
 
-
-
-
-/* PhotoDimmer */
 .overlay-photoDimmer {
   position: fixed;
   display: flex;
@@ -92,17 +94,17 @@ body {
   background-color: rgba(0,0,0,0.9);
   z-index: 10;
 }
+
 .overlay-container {
   position: fixed;
   display: flex;
   flex-wrap: wrap;
   top: 35px;
-/*   justify-content: left; */
-/*   align-content: space-between; */
   height: 660px;
   width: 660px;
   z-index: 10;
 }
+
 .overlay-left-btn {
   font-size: 34px;
   line-height: 1;
@@ -112,14 +114,17 @@ body {
   color: #91949a;
   border: none;
 }
+
 .overlay-left-btn:focus {
   outline: none;
 }
+
 .overlay-pic {
   height: 590px;
   width: 590px;
   background: rgba(0, 0, 0, 0.9);
 }
+
 .overlay-right-btn {
   font-size: 34px;
   line-height: 1;
@@ -129,31 +134,36 @@ body {
   color: #91949a;
   border: none;
 }
+
 .overlay-right-btn:focus {
   outline: none;
 }
+
 .overlay-timestamp {
   position: absolute;
   display: flex;
   left: 35px;
   top: 600px;
 }
+
 .overlay-timestamp-text {
   color: white;
   padding: 8px 0 0 0;
   margin: 0 0 0 6px;
     -webkit-font-smoothing: antialiased;
 }
+
 .overlay-flag-photo {
   position: absolute;
   display: flex;
   left: 91%;
   top: 91%;
-/*   top: 638px; */
 }
+
 .overlay-flag-photo:focus {
   outline: none;
 }
+
 .overlay-exit-btn {
   display: flex;
   position: fixed;
@@ -169,15 +179,15 @@ body {
 }
 .overlay-exit-svg {
   position: absolute;
-  /* top: 30px; */
-  /* right: 0px; */
   height: auto;
   width: 200px;
   z-index: 10;
 }
+
 .overlay-exit-btn:focus {
   outline: none;
 }
+
 .overlay-exit-btn:hover {
   cursor: pointer;
 }
