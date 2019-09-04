@@ -17,18 +17,6 @@ app.get('/api/restaurants/:id/photos', (req, res) => {
   });
 });
 
-// app.get('/info', (req, res) => {
-//   db.getAllInfo((results) => {
-//     res.status(200);
-//     res.send(results);
-//   });
-// });
-
-// app.get('/', (req, res) => {
-//   res.status(200);
-//   res.send();
-// });
-
 app.listen(port, () => console.log(`Listening on port ${port}!`));
 
 module.exports.app = app;
