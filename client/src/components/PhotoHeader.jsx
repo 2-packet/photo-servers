@@ -30,7 +30,6 @@ class PhotoHeader extends React.Component {
     }
   }
   clickRight() {
-    // TODO dynamic to pic count
     if (this.state.carouselId < 10) {
       this.setState({ carouselId: this.state.carouselId + 1 });
     }
