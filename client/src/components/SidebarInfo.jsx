@@ -13,20 +13,7 @@ class SidebarInfo extends React.Component {
     }
     this.handleView = this.handleView.bind(this);
   }
-  // componentDidMount() {
-  //   $.get({
-  //     url: 'http://localhost:3050/info/',
-  //     dataType: 'json',
-  //     success: getInfo => {
-  //       this.setState({
-  //         info: getInfo,
-  //         isLoading: false,
-  //         map: ('https://www.google.com/maps?q=' + String(getInfo[0].address) + '&output=embed'),
-  //       })
-  //     },
-  //     error: err => { console.log('Failed..', err) },
-  //   });
-  // }
+
   handleView() {
     if (this.state.viewMore) {
       this.setState({ viewMore: false });
