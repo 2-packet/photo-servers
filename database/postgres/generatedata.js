@@ -7,13 +7,10 @@ writer.write('rest_id,rest_name,photo_id,image,timestamp\n');
 const pic_url = ['https://rest-photos.s3-us-west-1.amazonaws.com/pic1.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic10.jpg', 'https://rest-photos.s3-us-west-1.amazonaws.com/pic2.jpg',
     'https://rest-photos.s3-us-west-1.amazonaws.com/pic4.jpg']
 
-
 function seed10Mil(writer) {
     let i = 10000001;
-
     function write() {
         let ok = true;
-
         do {
             let seeded = '';
             let rest_name = faker.lorem.words(3);
